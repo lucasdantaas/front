@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindSaude - Sua Dose Diária de Bem-Estar Mental e Físico</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">MindSaude News</a>
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="nav-link">Início</a></li>
+                        <li><a href="#destaque" class="nav-link">Destaque Semanal</a></li>
+                        <li><a href="#eventos" class="nav-link">Eventos</a></li>
+                        <li><a href="#articles" class="nav-link">Artigos</a></li>
+                        <li><a href="#noticias" class="nav-link">Notícias</a></li>
+                        <li><a href="#contact" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu">☰</button>
+            </div>
+            <div class="mobile-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#destaque" class="nav-link">Destaque Semanal</a></li>
+                    <li><a href="#eventos" class="nav-link">Eventos</a></li>
+                    <li><a href="#articles" class="nav-link">Artigos</a></li>
+                    <li><a href="#noticias" class="nav-link">Notícias</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Sua Dose Diária de Bem-Estar Mental e Físico</h1>
+            <p>Descubra insights de especialistas, dicas práticas e histórias inspiradoras para viver sua vida mais saudável e feliz todos os dias.</p>
+            <a href="#articles" class="cta-button">Leia os Últimos Artigos</a>
+        </div>
+    </section>
+
+    <!-- Filtro de Cidades -->
+    <section class="city-filter">
+        <div class="container">
+            <h2>Filtrar por Cidade</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-city="todas">Todas as Cidades</button>
+                <button class="filter-btn" data-city="sao-paulo">São Paulo</button>
+                <button class="filter-btn" data-city="rio-de-janeiro">Rio de Janeiro</button>
+                <button class="filter-btn" data-city="belo-horizonte">Belo Horizonte</button>
+                <button class="filter-btn" data-city="brasilia">Brasília</button>
+                <button class="filter-btn" data-city="salvador">Salvador</button>
+                <button class="filter-btn" data-city="curitiba">Curitiba</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaque Semanal -->
+    <section class="weekly-highlight" id="destaque">
+        <div class="container">
+            <h2 class="section-title">Destaque Semanal</h2>
+            <div class="highlight-featured">
+                <article class="highlight-main">
+                    <div class="highlight-image">
+                        <div class="image-placeholder">Imagem Principal</div>
+                        <div class="highlight-badge">DESTAQUE</div>
+                    </div>
+                    <div class="highlight-content">
+                        <span class="highlight-category">Saúde Mental</span>
+                        <h3>Como a Meditação Está Transformando Empresas Brasileiras</h3>
+                        <p class="highlight-excerpt">Uma investigação profunda sobre como grandes empresas estão implementando programas de mindfulness e os resultados surpreendentes na produtividade e bem-estar dos funcionários.</p>
+                        <div class="highlight-meta">
+                            <span class="author">Por Dr. Marina Silva</span>
+                            <span class="date">23 de Setembro, 2025</span>
+                            <span class="read-time">8 min de leitura</span>
+                        </div>
+                        <a href="#" class="highlight-read-more">Leia a Matéria Completa →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eventos Section -->
+    <section class="events-section" id="eventos">
+        <div class="container">
+            <h2 class="section-title">Eventos e Projetos</h2>
+            <div class="events-grid" id="events-container">
+                <div class="event-card" data-city="sao-paulo">
+                    <div class="event-date">
+                        <span class="day">28</span>
+                        <span class="month">SET</span>
+                    </div>
+                    <div class="event-content">
+                        <span class="event-city">São Paulo</span>
+                        <h4>Workshop de Mindfulness para Iniciantes</h4>
+                        <p>Aprenda técnicas básicas de mindfulness em um ambiente acolhedor no centro de São Paulo.</p>
+                        <div class="event-info">
+                            <span class="event-time">19:00 - 21:00</span>
+                            <span class="event-location">Centro Cultural, SP</span>
+                        </div>
+                        <a href="#" class="event-btn">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="event-card" data-city="rio-de-janeiro">
+                    <div class="event-date">
+                        <span class="day">30</span>
+                        <span class="month">SET</span>
+                    </div>
+                    <div class="event-content">
+                        <span class="event-city">Rio de Janeiro</span>
+                        <h4>Corrida pela Saúde Mental</h4>
+                        <p>Evento beneficente para arrecadar fundos para organizações de saúde mental.</p>
+                        <div class="event-info">
+                            <span class="event-time">07:00 - 12:00</span>
+                            <span class="event-location">Lagoa Rodrigo de Freitas</span>
+                        </div>
+                        <a href="#" class="event-btn">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="event-card" data-city="belo-horizonte">
+                    <div class="event-date">
+                        <span class="day">05</span>
+                        <span class="month">OUT</span>
+                    </div>
+                    <div class="event-content">
+                        <span class="event-city">Belo Horizonte</span>
+                        <h4>Palestra: Nutrição e Saúde Mental</h4>
+                        <p>Como a alimentação influencia nosso bem-estar emocional e mental.</p>
+                        <div class="event-info">
+                            <span class="event-time">14:00 - 16:00</span>
+                            <span class="event-location">Auditório UFMG</span>
+                        </div>
+                        <a href="#" class="event-btn">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="event-card" data-city="brasilia">
+                    <div class="event-date">
+                        <span class="day">08</span>
+                        <span class="month">OUT</span>
+                    </div>
+                    <div class="event-content">
+                        <span class="event-city">Brasília</span>
+                        <h4>Projeto Bem-Estar Comunitário</h4>
+                        <p>Iniciativa para levar práticas de bem-estar às comunidades locais.</p>
+                        <div class="event-info">
+                            <span class="event-time">09:00 - 17:00</span>
+                            <span class="event-location">Parque da Cidade</span>
+                        </div>
+                        <a href="#" class="event-btn">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="event-card" data-city="salvador">
+                    <div class="event-date">
+                        <span class="day">12</span>
+                        <span class="month">OUT</span>
+                    </div>
+                    <div class="event-content">
+                        <span class="event-city">Salvador</span>
+                        <h4>Festival de Yoga na Praia</h4>
+                        <p>Uma manhã de yoga e meditação com vista para o mar.</p>
+                        <div class="event-info">
+                            <span class="event-time">06:00 - 10:00</span>
+                            <span class="event-location">Praia de Ipanema, Salvador</span>
+                        </div>
+                        <a href="#" class="event-btn">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="event-card" data-city="curitiba">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">OUT</span>
+                    </div>
+                    <div class="event-content">
+                        <span class="event-city">Curitiba</span>
+                        <h4>Seminário de Psicologia Positiva</h4>
+                        <p>Explorando as bases científicas da felicidade e do bem-estar.</p>
+                        <div class="event-info">
+                            <span class="event-time">13:00 - 18:00</span>
+                            <span class="event-location">Teatro Guaíra</span>
+                        </div>
+                        <a href="#" class="event-btn">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="featured-articles" id="articles">
+        <div class="container">
+            <h2 class="section-title">Artigos em Destaque</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-image">Imagem do Artigo</div>
+                    <div class="article-content">
+                        <h3>5 Técnicas de Mindfulness para Alívio do Estresse Diário</h3>
+                        <div class="article-author">
+                            <span class="author-name">Por Dra. Ana Costa</span>
+                            <span class="article-date">25 de Setembro, 2025</span>
+                        </div>
+                        <p>Aprenda práticas simples, mas eficazes de mindfulness que você pode incorporar à sua rotina diária para reduzir o estresse e melhorar a clareza mental.</p>
+                        <a href="#" class="news-read-more">Leia mais</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image">Imagem do Artigo</div>
+                    <div class="article-content">
+                        <h3>A Ciência por Trás dos Padrões de Sono Saudáveis</h3>
+                        <div class="article-author">
+                            <span class="author-name">Por Dr. Carlos Mendes</span>
+                            <span class="article-date">24 de Setembro, 2025</span>
+                        </div>
+                        <p>Descubra como a higiene do sono adequada afeta sua saúde física e mental, além de dicas práticas para melhor descanso e recuperação.</p>
+                        <a href="#" class="news-read-more">Leia mais</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image">Imagem do Artigo</div>
+                    <div class="article-content">
+                        <h3>Construindo Resiliência Através do Exercício Físico</h3>
+                        <div class="article-author">
+                            <span class="author-name">Por Prof. Mariana Santos</span>
+                            <span class="article-date">23 de Setembro, 2025</span>
+                        </div>
+                        <p>Explore a poderosa conexão entre atividade física e resiliência mental, com rotinas de exercícios para todos os níveis de condicionamento.</p>
+                        <a href="#" class="news-read-more">Leia mais</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-image">Imagem do Artigo</div>
+                    <div class="article-content">
+                        <h3>Nutrição para Clareza Mental e Foco</h3>
+                        <div class="article-author">
+                            <span class="author-name">Por Dra. Fernanda Lima</span>
+                            <span class="article-date">22 de Setembro, 2025</span>
+                        </div>
+                        <p>Entenda como os alimentos que você come impactam diretamente sua função cognitiva e aprenda sobre estratégias nutricionais para o cérebro.</p>
+                        <a href="#" class="news-read-more">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notícias Section -->
+    <section class="news-section" id="noticias">
+        <div class="container">
+            <h2 class="section-title">Últimas Notícias</h2>
+            <div class="news-grid">
+                <div class="news-card" data-city="sao-paulo">
+                    <h4>Novo Centro de Saúde Mental Abre em São Paulo</h4>
+                    <div class="news-meta">
+                        <span class="news-city">São Paulo</span>
+                        <span class="news-date">Hoje, 15:30</span>
+                    </div>
+                    <p>Inauguração do maior centro de atendimento psicológico gratuito da América Latina acontece na próxima semana.</p>
+                    <a href="noticia.html" class="news-read-more">Leia mais</a>
+
+                </div>
+
+                <div class="news-card" data-city="rio-de-janeiro">
+                    <h4>Estudo Comprova Benefícios da Terapia em Grupo</h4>
+                    <div class="news-meta">
+                        <span class="news-city">Rio de Janeiro</span>
+                        <span class="news-date">Ontem, 10:45</span>
+                    </div>
+                    <p>Pesquisa da UFRJ mostra eficácia 40% maior no tratamento de ansiedade com terapia em grupo.</p>
+                    <a href="noticia.html" class="news-read-more">Leia mais</a>
+
+                </div>
+
+                <div class="news-card" data-city="brasilia">
+                    <h4>Governo Federal Anuncia Política Nacional de Bem-Estar</h4>
+                    <div class="news-meta">
+                        <span class="news-city">Brasília</span>
+                        <span class="news-date">26 Set, 14:20</span>
+                    </div>
+                    <p>Nova política prevê investimento de R$ 500 milhões em programas de saúde mental nas escolas.</p>
+                    <a href="noticia.html" class="news-read-more">Leia mais</a>
+
+                </div>
+
+                <div class="news-card" data-city="belo-horizonte">
+                    <h4>App de Meditação Desenvolvido em BH Ganha Prêmio Internacional</h4>
+                    <div class="news-meta">
+                        <span class="news-city">Belo Horizonte</span>
+                        <span class="news-date">25 Set, 09:15</span>
+                    </div>
+                    <p>Aplicativo criado por estudantes da UFMG é reconhecido como melhor inovação em saúde digital.</p>
+                    <a href="noticia.html" class="news-read-more">Leia mais</a>
+
+                </div>
+
+                <div class="news-card" data-city="salvador">
+                    <h4>Salvador Implementa Programa de Yoga nas Praias</h4>
+                    <div class="news-meta">
+                        <span class="news-city">Salvador</span>
+                        <span class="news-date">24 Set, 16:00</span>
+                    </div>
+                    <p>Prefeitura oferece aulas gratuitas de yoga e meditação em 15 praias da cidade.</p>
+                    <a href="noticia.html" class="news-read-more">Leia mais</a>
+
+                </div>
+
+                <div class="news-card" data-city="curitiba">
+                    <h4>Curitiba Lidera Ranking de Cidades Mais Saudáveis do Brasil</h4>
+                    <div class="news-meta">
+                        <span class="news-city">Curitiba</span>
+                        <span class="news-date">23 Set, 11:30</span>
+                    </div>
+                    <p>Pesquisa nacional aponta capital paranaense como a cidade com melhor índice de bem-estar do país.</p>
+                    <a href="noticia.html" class="news-read-more">Leia mais</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Mantenha-se Informado, Mantenha-se Saudável</h2>
+            <p>Junte-se a milhares de leitores que recebem nossa newsletter semanal de bem-estar com as últimas informações e dicas de saúde.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Digite seu endereço de e-mail" required>
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MindSaude News</h3>
+                    <p>Capacitando sua jornada para uma melhor saúde mental e física através de conteúdo curado por especialistas e apoio da comunidade.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">t</a>
+                        <a href="#" class="social-icon">i</a>
+                        <a href="#" class="social-icon">y</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#destaque">Destaque Semanal</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#articles">Artigos</a></li>
+                        <li><a href="#noticias">Notícias</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li><a href="#">Mindfulness</a></li>
+                        <li><a href="#">Nutrição</a></li>
+                        <li><a href="#">Exercícios</a></li>
+                        <li><a href="#">Saúde do Sono</a></li>
+                        <li><a href="#">Gerenciamento de Estresse</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Informações de Contato</h3>
+                    <ul>
+                        <li><a href="mailto:info@mindsaude.com">info@mindsaude.com</a></li>
+                        <li><a href="tel:+5511999999999">+55 (11) 99999-9999</a></li>
+                        <li>Rua do Bem-Estar, 123<br>Cidade da Saúde, SP 01234-567</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 MindSaude. Todos os direitos reservados. | <a href="#privacy" style="color: #666666;">Política de Privacidade</a> | <a href="#terms" style="color: #666666;">Termos de Serviço</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu mobile funcional
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        mobileMenu.addEventListener('click', function() {
+            if (mobileNav.style.display === 'block') {
+                mobileNav.style.display = 'none';
+            } else {
+                mobileNav.style.display = 'block';
+            }
+        });
+
+        // Fechar menu mobile ao clicar em um link
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileNav.style.display = 'none';
+            });
+        });
+
+        // Rolagem suave para links âncora e destacar item ativo
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Remover classe active de todos os links
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    
+                    // Adicionar classe active ao link clicado
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // Destacar seção ativa no scroll
+        window.addEventListener('scroll', function() {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Filtro de cidades funcional
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const eventCards = document.querySelectorAll('.event-card');
+        const newsCards = document.querySelectorAll('.news-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remover classe active de todos os botões
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Adicionar classe active ao botão clicado
+                this.classList.add('active');
+                
+                const selectedCity = this.getAttribute('data-city');
+                
+                // Filtrar eventos
+                eventCards.forEach(card => {
+                    if (selectedCity === 'todas' || card.getAttribute('data-city') === selectedCity) {
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeIn 0.5s ease-in';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Filtrar notícias
+                newsCards.forEach(card => {
+                    if (selectedCity === 'todas' || card.getAttribute('data-city') === selectedCity) {
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeIn 0.5s ease-in';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Envio do formulário da newsletter
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert('Obrigado por se inscrever! Bem-vindo ao MindSaude.');
+            this.reset();
+        });
+
+        // Fechar menu mobile ao clicar fora
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('header')) {
+                mobileNav.style.display = 'none';
+            }
+        });
+
+        // Funcionalidade dos botões de eventos e notícias
+        document.querySelectorAll('.event-btn, .highlight-read-more').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Esta funcionalidade será implementada em breve!');
+            });
+        });
+
+        // Animação de entrada para cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observar todos os cards para animação
+        document.querySelectorAll('.article-card, .event-card, .news-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
