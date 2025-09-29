@@ -19,8 +19,8 @@
                         <li><a href="#home" class="nav-link">Início</a></li>
                         <li><a href="#destaque" class="nav-link">Destaque Semanal</a></li>
                         <li><a href="#eventos" class="nav-link">Eventos</a></li>
-                        <li><a href="#articles" class="nav-link">Artigos</a></li>
                         <li><a href="#noticias" class="nav-link">Notícias</a></li>
+                        <li><a href="#articles" class="nav-link">Artigos</a></li>
                         <li><a href="#contact" class="nav-link">Contato</a></li>
                     </ul>
                 </nav>
@@ -31,8 +31,8 @@
                     <li><a href="#home" class="nav-link">Início</a></li>
                     <li><a href="#destaque" class="nav-link">Destaque Semanal</a></li>
                     <li><a href="#eventos" class="nav-link">Eventos</a></li>
-                    <li><a href="#articles" class="nav-link">Artigos</a></li>
                     <li><a href="#noticias" class="nav-link">Notícias</a></li>
+                    <li><a href="#articles" class="nav-link">Artigos</a></li>
                     <li><a href="#contact" class="nav-link">Contato</a></li>
                 </ul>
             </div>
@@ -64,28 +64,80 @@
         </div>
     </section>
 
-    <!-- Destaque Semanal -->
+    <!-- Destaque Semanal - Carrossel -->
     <section class="weekly-highlight" id="destaque">
         <div class="container">
             <h2 class="section-title">Destaque Semanal</h2>
             <div class="highlight-featured">
-                <article class="highlight-main">
-                    <div class="highlight-image">
-                        <div class="image-placeholder">Imagem Principal</div>
-                        <div class="highlight-badge">DESTAQUE</div>
-                    </div>
-                    <div class="highlight-content">
-                        <span class="highlight-category">Saúde Mental</span>
-                        <h3>Como a Meditação Está Transformando Empresas Brasileiras</h3>
-                        <p class="highlight-excerpt">Uma investigação profunda sobre como grandes empresas estão implementando programas de mindfulness e os resultados surpreendentes na produtividade e bem-estar dos funcionários.</p>
-                        <div class="highlight-meta">
-                            <span class="author">Por Dr. Marina Silva</span>
-                            <span class="date">23 de Setembro, 2025</span>
-                            <span class="read-time">8 min de leitura</span>
+                <div class="carousel-container">
+                    <!-- Slide 1 -->
+                    <article class="highlight-main carousel-slide active">
+                        <div class="highlight-image">
+                            <div class="image-placeholder">Imagem Principal</div>
+                            <div class="highlight-badge">DESTAQUE</div>
                         </div>
-                        <a href="#" class="highlight-read-more">Leia a Matéria Completa →</a>
-                    </div>
-                </article>
+                        <div class="highlight-content">
+                            <span class="highlight-category">Saúde Mental</span>
+                            <h3>Como a Meditação Está Transformando Empresas Brasileiras</h3>
+                            <p class="highlight-excerpt">Uma investigação profunda sobre como grandes empresas estão implementando programas de mindfulness e os resultados surpreendentes na produtividade e bem-estar dos funcionários.</p>
+                            <div class="highlight-meta">
+                                <span class="author">Por Dr. Marina Silva</span>
+                                <span class="date">23 de Setembro, 2025</span>
+                                <span class="read-time">8 min de leitura</span>
+                            </div>
+                            <a href="#" class="highlight-read-more">Leia a Matéria Completa →</a>
+                        </div>
+                    </article>
+
+                    <!-- Slide 2 -->
+                    <article class="highlight-main carousel-slide">
+                        <div class="highlight-image">
+                            <div class="image-placeholder">Imagem Principal</div>
+                            <div class="highlight-badge">DESTAQUE</div>
+                        </div>
+                        <div class="highlight-content">
+                            <span class="highlight-category">Bem-Estar</span>
+                            <h3>A Revolução do Bem-Estar nas Escolas Públicas</h3>
+                            <p class="highlight-excerpt">Descubra como programas inovadores de saúde mental estão mudando a vida de milhares de estudantes em todo o país, criando ambientes mais saudáveis e produtivos.</p>
+                            <div class="highlight-meta">
+                                <span class="author">Por Prof. Ricardo Alves</span>
+                                <span class="date">20 de Setembro, 2025</span>
+                                <span class="read-time">10 min de leitura</span>
+                            </div>
+                            <a href="#" class="highlight-read-more">Leia a Matéria Completa →</a>
+                        </div>
+                    </article>
+
+                    <!-- Slide 3 -->
+                    <article class="highlight-main carousel-slide">
+                        <div class="highlight-image">
+                            <div class="image-placeholder">Imagem Principal</div>
+                            <div class="highlight-badge">DESTAQUE</div>
+                        </div>
+                        <div class="highlight-content">
+                            <span class="highlight-category">Fitness</span>
+                            <h3>Exercícios ao Ar Livre: O Novo Movimento Fitness do Brasil</h3>
+                            <p class="highlight-excerpt">Explore como os parques brasileiros se tornaram academias a céu aberto e os benefícios comprovados desta tendência para corpo e mente.</p>
+                            <div class="highlight-meta">
+                                <span class="author">Por Dra. Juliana Ferreira</span>
+                                <span class="date">18 de Setembro, 2025</span>
+                                <span class="read-time">7 min de leitura</span>
+                            </div>
+                            <a href="#" class="highlight-read-more">Leia a Matéria Completa →</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Controles do Carrossel -->
+                <button class="carousel-btn prev-btn" aria-label="Slide anterior">‹</button>
+                <button class="carousel-btn next-btn" aria-label="Próximo slide">›</button>
+                
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                </div>
             </div>
         </div>
     </section>
@@ -200,13 +252,110 @@
         </div>
     </section>
 
+    <!-- Notícias Section -->
+    <section class="news-section" id="noticias">
+        <div class="container">
+            <h2 class="section-title">Últimas Notícias</h2>
+            <div class="news-grid">
+                <div class="news-card" data-city="sao-paulo">
+                    <div class="news-image">
+                        <div class="image-placeholder">Centro de Saúde</div>
+                    </div>
+                    <div class="news-content">
+                        <h4>Novo Centro de Saúde Mental Abre em São Paulo</h4>
+                        <div class="news-meta">
+                            <span class="news-city">São Paulo</span>
+                            <span class="news-date">Hoje, 15:30</span>
+                        </div>
+                        <p>Inauguração do maior centro de atendimento psicológico gratuito da América Latina acontece na próxima semana.</p>
+                        <a href="noticia.html" class="news-read-more">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class="news-card" data-city="rio-de-janeiro">
+                    <div class="news-image">
+                        <div class="image-placeholder">Terapia em Grupo</div>
+                    </div>
+                    <div class="news-content">
+                        <h4>Estudo Comprova Benefícios da Terapia em Grupo</h4>
+                        <div class="news-meta">
+                            <span class="news-city">Rio de Janeiro</span>
+                            <span class="news-date">Ontem, 10:45</span>
+                        </div>
+                        <p>Pesquisa da UFRJ mostra eficácia 40% maior no tratamento de ansiedade com terapia em grupo.</p>
+                        <a href="noticia.html" class="news-read-more">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class="news-card" data-city="brasilia">
+                    <div class="news-image">
+                        <div class="image-placeholder">Política Nacional</div>
+                    </div>
+                    <div class="news-content">
+                        <h4>Governo Federal Anuncia Política Nacional de Bem-Estar</h4>
+                        <div class="news-meta">
+                            <span class="news-city">Brasília</span>
+                            <span class="news-date">26 Set, 14:20</span>
+                        </div>
+                        <p>Nova política prevê investimento de R$ 500 milhões em programas de saúde mental nas escolas.</p>
+                        <a href="noticia.html" class="news-read-more">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class="news-card" data-city="belo-horizonte">
+                    <div class="news-image">
+                        <div class="image-placeholder">App de Meditação</div>
+                    </div>
+                    <div class="news-content">
+                        <h4>App de Meditação Desenvolvido em BH Ganha Prêmio Internacional</h4>
+                        <div class="news-meta">
+                            <span class="news-city">Belo Horizonte</span>
+                            <span class="news-date">25 Set, 09:15</span>
+                        </div>
+                        <p>Aplicativo criado por estudantes da UFMG é reconhecido como melhor inovação em saúde digital.</p>
+                        <a href="noticia.html" class="news-read-more">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class="news-card" data-city="salvador">
+                    <div class="news-image">
+                        <div class="image-placeholder">Yoga nas Praias</div>
+                    </div>
+                    <div class="news-content">
+                        <h4>Salvador Implementa Programa de Yoga nas Praias</h4>
+                        <div class="news-meta">
+                            <span class="news-city">Salvador</span>
+                            <span class="news-date">24 Set, 16:00</span>
+                        </div>
+                        <p>Prefeitura oferece aulas gratuitas de yoga e meditação em 15 praias da cidade.</p>
+                        <a href="noticia.html" class="news-read-more">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class="news-card" data-city="curitiba">
+                    <div class="news-image">
+                        <div class="image-placeholder">Cidade Saudável</div>
+                    </div>
+                    <div class="news-content">
+                        <h4>Curitiba Lidera Ranking de Cidades Mais Saudáveis do Brasil</h4>
+                        <div class="news-meta">
+                            <span class="news-city">Curitiba</span>
+                            <span class="news-date">23 Set, 11:30</span>
+                        </div>
+                        <p>Pesquisa nacional aponta capital paranaense como a cidade com melhor índice de bem-estar do país.</p>
+                        <a href="noticia.html" class="news-read-more">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Featured Articles -->
     <section class="featured-articles" id="articles">
         <div class="container">
             <h2 class="section-title">Artigos em Destaque</h2>
             <div class="articles-grid">
                 <article class="article-card">
-                    <div class="article-image">Imagem do Artigo</div>
                     <div class="article-content">
                         <h3>5 Técnicas de Mindfulness para Alívio do Estresse Diário</h3>
                         <div class="article-author">
@@ -214,12 +363,11 @@
                             <span class="article-date">25 de Setembro, 2025</span>
                         </div>
                         <p>Aprenda práticas simples, mas eficazes de mindfulness que você pode incorporar à sua rotina diária para reduzir o estresse e melhorar a clareza mental.</p>
-                        <a href="#" class="news-read-more">Leia mais</a>
+                        <a href="#" class="read-more">Leia mais</a>
                     </div>
                 </article>
 
                 <article class="article-card">
-                    <div class="article-image">Imagem do Artigo</div>
                     <div class="article-content">
                         <h3>A Ciência por Trás dos Padrões de Sono Saudáveis</h3>
                         <div class="article-author">
@@ -227,12 +375,11 @@
                             <span class="article-date">24 de Setembro, 2025</span>
                         </div>
                         <p>Descubra como a higiene do sono adequada afeta sua saúde física e mental, além de dicas práticas para melhor descanso e recuperação.</p>
-                        <a href="#" class="news-read-more">Leia mais</a>
+                        <a href="#" class="read-more">Leia mais</a>
                     </div>
                 </article>
 
                 <article class="article-card">
-                    <div class="article-image">Imagem do Artigo</div>
                     <div class="article-content">
                         <h3>Construindo Resiliência Através do Exercício Físico</h3>
                         <div class="article-author">
@@ -240,12 +387,11 @@
                             <span class="article-date">23 de Setembro, 2025</span>
                         </div>
                         <p>Explore a poderosa conexão entre atividade física e resiliência mental, com rotinas de exercícios para todos os níveis de condicionamento.</p>
-                        <a href="#" class="news-read-more">Leia mais</a>
+                        <a href="#" class="read-more">Leia mais</a>
                     </div>
                 </article>
 
                 <article class="article-card">
-                    <div class="article-image">Imagem do Artigo</div>
                     <div class="article-content">
                         <h3>Nutrição para Clareza Mental e Foco</h3>
                         <div class="article-author">
@@ -253,83 +399,9 @@
                             <span class="article-date">22 de Setembro, 2025</span>
                         </div>
                         <p>Entenda como os alimentos que você come impactam diretamente sua função cognitiva e aprenda sobre estratégias nutricionais para o cérebro.</p>
-                        <a href="#" class="news-read-more">Leia mais</a>
+                        <a href="#" class="read-more">Leia mais</a>
                     </div>
                 </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Notícias Section -->
-    <section class="news-section" id="noticias">
-        <div class="container">
-            <h2 class="section-title">Últimas Notícias</h2>
-            <div class="news-grid">
-                <div class="news-card" data-city="sao-paulo">
-                    <h4>Novo Centro de Saúde Mental Abre em São Paulo</h4>
-                    <div class="news-meta">
-                        <span class="news-city">São Paulo</span>
-                        <span class="news-date">Hoje, 15:30</span>
-                    </div>
-                    <p>Inauguração do maior centro de atendimento psicológico gratuito da América Latina acontece na próxima semana.</p>
-                    <a href="noticia.html" class="news-read-more">Leia mais</a>
-
-                </div>
-
-                <div class="news-card" data-city="rio-de-janeiro">
-                    <h4>Estudo Comprova Benefícios da Terapia em Grupo</h4>
-                    <div class="news-meta">
-                        <span class="news-city">Rio de Janeiro</span>
-                        <span class="news-date">Ontem, 10:45</span>
-                    </div>
-                    <p>Pesquisa da UFRJ mostra eficácia 40% maior no tratamento de ansiedade com terapia em grupo.</p>
-                    <a href="noticia.html" class="news-read-more">Leia mais</a>
-
-                </div>
-
-                <div class="news-card" data-city="brasilia">
-                    <h4>Governo Federal Anuncia Política Nacional de Bem-Estar</h4>
-                    <div class="news-meta">
-                        <span class="news-city">Brasília</span>
-                        <span class="news-date">26 Set, 14:20</span>
-                    </div>
-                    <p>Nova política prevê investimento de R$ 500 milhões em programas de saúde mental nas escolas.</p>
-                    <a href="noticia.html" class="news-read-more">Leia mais</a>
-
-                </div>
-
-                <div class="news-card" data-city="belo-horizonte">
-                    <h4>App de Meditação Desenvolvido em BH Ganha Prêmio Internacional</h4>
-                    <div class="news-meta">
-                        <span class="news-city">Belo Horizonte</span>
-                        <span class="news-date">25 Set, 09:15</span>
-                    </div>
-                    <p>Aplicativo criado por estudantes da UFMG é reconhecido como melhor inovação em saúde digital.</p>
-                    <a href="noticia.html" class="news-read-more">Leia mais</a>
-
-                </div>
-
-                <div class="news-card" data-city="salvador">
-                    <h4>Salvador Implementa Programa de Yoga nas Praias</h4>
-                    <div class="news-meta">
-                        <span class="news-city">Salvador</span>
-                        <span class="news-date">24 Set, 16:00</span>
-                    </div>
-                    <p>Prefeitura oferece aulas gratuitas de yoga e meditação em 15 praias da cidade.</p>
-                    <a href="noticia.html" class="news-read-more">Leia mais</a>
-
-                </div>
-
-                <div class="news-card" data-city="curitiba">
-                    <h4>Curitiba Lidera Ranking de Cidades Mais Saudáveis do Brasil</h4>
-                    <div class="news-meta">
-                        <span class="news-city">Curitiba</span>
-                        <span class="news-date">23 Set, 11:30</span>
-                    </div>
-                    <p>Pesquisa nacional aponta capital paranaense como a cidade com melhor índice de bem-estar do país.</p>
-                    <a href="noticia.html" class="news-read-more">Leia mais</a>
-
-                </div>
             </div>
         </div>
     </section>
@@ -367,8 +439,8 @@
                         <li><a href="#home">Início</a></li>
                         <li><a href="#destaque">Destaque Semanal</a></li>
                         <li><a href="#eventos">Eventos</a></li>
-                        <li><a href="#articles">Artigos</a></li>
                         <li><a href="#noticias">Notícias</a></li>
+                        <li><a href="#articles">Artigos</a></li>
                         <li><a href="#contact">Contato</a></li>
                     </ul>
                 </div>
@@ -401,7 +473,87 @@
     </footer>
 
     <script>
-        // Menu mobile funcional
+        // ============================================
+        // CARROSSEL DO DESTAQUE SEMANAL
+        // ============================================
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalSlides = slides.length;
+        let autoplayInterval;
+
+        // Função para mostrar slide específico
+        function showSlide(index) {
+            // Garantir que o índice está dentro dos limites
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+
+            // Remover classe active de todos os slides e indicadores
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+
+            // Adicionar classe active ao slide e indicador atual
+            slides[currentSlide].classList.add('active');
+            indicators[currentSlide].classList.add('active');
+        }
+
+        // Função para próximo slide
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        // Função para slide anterior
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        // Autoplay do carrossel (muda a cada 5 segundos)
+        function startAutoplay() {
+            autoplayInterval = setInterval(nextSlide, 5000);
+        }
+
+        // Parar autoplay
+        function stopAutoplay() {
+            clearInterval(autoplayInterval);
+        }
+
+        // Event listeners para os botões de navegação
+        document.querySelector('.next-btn').addEventListener('click', () => {
+            nextSlide();
+            stopAutoplay();
+            startAutoplay(); // Reinicia o autoplay após interação manual
+        });
+
+        document.querySelector('.prev-btn').addEventListener('click', () => {
+            prevSlide();
+            stopAutoplay();
+            startAutoplay(); // Reinicia o autoplay após interação manual
+        });
+
+        // Event listeners para os indicadores
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                showSlide(index);
+                stopAutoplay();
+                startAutoplay(); // Reinicia o autoplay após interação manual
+            });
+        });
+
+        // Pausar autoplay quando o mouse está sobre o carrossel
+        document.querySelector('.carousel-container').addEventListener('mouseenter', stopAutoplay);
+        document.querySelector('.carousel-container').addEventListener('mouseleave', startAutoplay);
+
+        // Iniciar o autoplay quando a página carregar
+        startAutoplay();
+
+        // ============================================
+        // MENU MOBILE
+        // ============================================
         const mobileMenu = document.querySelector('.mobile-menu');
         const mobileNav = document.querySelector('.mobile-nav');
 
